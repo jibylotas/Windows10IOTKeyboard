@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="PCIT.Windows10.IOT.Test.Keyboard.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SpeechTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:keyboard="using:PCIT.Windows10.IOT.Input.KeyboardInput"
+    mc:Ignorable="d">
+
+    <Grid  x:Name="windowControl" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+
+        </Grid.RowDefinitions>
+
+
+        <TextBox x:Name="txtDebug" Grid.Row="0" TextWrapping="Wrap" Text="" ScrollViewer.VerticalScrollMode="Enabled" ScrollViewer.VerticalScrollBarVisibility="Visible" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+        <keyboard:Keyboard Grid.Row="1" Padding="0" Margin="0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ></keyboard:Keyboard>
+    </Grid>
+    
+</Page>
